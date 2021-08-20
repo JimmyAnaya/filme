@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.header{
+   width: 100%; 
+   height: 12rem;
+   background: #0E3DA4;
+   background-image: url('../img/headerBlock.png');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+}
+.main{
+    width: 100%;
+    height: 70%;
+    background: #F7F7F7; 
+}
+.section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.section__Form{
+    display: flex;
+    flex-direction: column;  
+}
+.section__Form--label{
+    font-size: 2rem;
+    margin: 1rem;
+    color: #0E3DA4;
+    text-align: center;
+    font-weight: bold;
+}
+.contacontainerSuscrip{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.section__form--chek{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.section__Form--input{
+    margin-top: 0.5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border-radius: 2rem;
+    border: whitesmoke 0.1rem solid;
+    background-color:rgba(247, 164, 3, 1);
+    color: white;
+    font-size: 3rem;
+    height: 4rem;
+    padding-left: 1rem;
+    text-decoration: none;
+}
+.section__form--chek{
+    margin-top: 2rem
+}
+.form--Check{
+    transform:  scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(2);
+    margin-left: 1.5rem;
+}
+.section__form--chek img{
+    width: 50%;
+}
+.btnCalcular{
+    width: 50%;
+    margin: 2rem;
+    border-radius: 3rem;
+    border: none;
+    background-color:rgba(247, 11, 3, 0.8);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    align-self: center;
+}
+.btnCalcular:hover{
+    cursor: pointer;
+    background-color: rgba(247, 164, 3, 0.7);
+}
+.btnCalcular:active{
+    cursor: pointer;
+    background-color:#0E3DA4;
+}
+
+.section__label{
+    color: #0E3DA4;
+    font-size: 2rem;
+    margin-left: 1rem;
+    text-align: center;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.section__result--Peli{
+    margin: 3rem;
+    color: #F7A403;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(4, 67, 154, 0.1);
+    border-radius: 2rem;
+}
+.section__resultComparacion{
+    border: #0E3DA4 0.1rem solid;
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem;
+    background-color:#0E3DA4;
+    color:#F7A403;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    margin: 1rem 2rem;
+    border-radius: 2rem;
+}
+.footer__container--icons{
+    width: 100%;
+    height: 5rem;
+    display: grid;
+    background-color:#0E3DA4;
+}
+.icons{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-left: 0;
+    align-items: center;
+    justify-content: space-around;
+}
+.icons span{
+    color: #F7A403;
+}
+::placeholder{
+    color: rgba(255, 255, 255, 0.233);
+}
+
+@media (min-width:750px){
+    .section__Form--label{
+        font-size: 4rem;
+      
+    }
+    .btnCalcular{
+        width: 30rem;
+        height: 10rem;
+        color: white;
+        font-size: 2.5rem;
+        align-self: center;
+    }
+
+}
